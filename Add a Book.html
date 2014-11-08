@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Rate My Book/Add a Book</title>
+<meta name="description" content="books' Rating System">
+<meta name="keywords" content="on-line books' rating system, books' rating">
+<meta name="author" content="Issa Malke">
+<meta charset="utf-8">
+<link href="Rate My Book.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div id="wrapper">
+	<div class="header">
+	<h1 class="shadow"> Rate My Book </h1>
+    <h2>experts in books' rating</h2>
+	</div>
+  <nav>
+    <ul>
+      <li><div class="border"><a href="Home.html">Home</a></div></li>
+	  <li><a href="Sign-in.html">Sign in</a></li>
+      <li><a href="Add a Book.html">Add a Book</a></li>
+      <li><a href="User Account.html">User Account</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div id="content"> 
+ 
+ <div class="article"><span class="font">Note: </span>isbn & Title are required to add a Book.
+	Author, Publication year and Publisher are<br> not required.
+	Rating a Book is optional, and its default value is 1.<br>Rating scale is from 1 to 10.
+ </div>
+ <br><br><br><br>
+	<form id=Standard>
+	<fieldset>
+		<legend>Books' Details</legend>
+		<ol>
+			<li>
+			<label for=ISBN>ISBN</label>
+			<input id=ISBN name=ISBN type=text required>
+			</li>
+			<li>
+			<label for=Title>Title</label>
+			<input id=Title name=Title type=text required>
+			</li>
+			<li>
+			<label for=Author>Author</label>
+			<input id=Author name=Author type=text >
+			</li>
+			<li>
+			<label for=Year>Publication Year</label>
+			<input id=Year name=Year type=text >
+			</li>
+			<li>
+			<label for=Publisher>Publisher</label>
+			<input id=Publisher name=Publisher type=text >
+			</li>
+		</ol>
+	</fieldset>
+	<fieldset>
+		<legend>Rating</legend>
+		<ol>
+			<li>
+			
+			
+			<label for="Rate">Book's Rate</label> 
+			(1 - 10)
+			<input type="range" name="Rate" id="Rate" min="1" max="10">
+			
+		
+			</li>
+		</ol>
+		<br>
+		<button type=submit>Add Book</button>
+	</fieldset>
+	</div>
+	
+	</div>
+	
+</form>
+	
+<img class="Box2" src="Add.jpg" alt="Add a Book">
+
+  </div>
+  <footer>Copyright &copy; 2014 Issa Malke. All rights Reserved.
+  <div class="hypLinks"><a href="Home.html">Home</a>&nbsp;<a href="Sign-in.html">Sign in</a>&nbsp;<a href="Add a Book.html">Add a Book</a>&nbsp;<a href="User Account.html">User Account</a>&nbsp;<a href="contact.html">Contact Us</a></div>
+  </footer>
+ </div>
+</body>
+</html>
+
+
