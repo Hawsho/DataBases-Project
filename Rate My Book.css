@@ -50,6 +50,7 @@ input, textarea { margin-bottom: 20px;
 	padding: 20px;
 	width: 400px;
 }
+
 fieldset {
 	border: none;
 	margin-bottom: 10px;
@@ -116,19 +117,20 @@ button {
 	margin: auto;
 	padding: 7px 20px;
 	text-shadow: 0 1px 1px #000000;
+	
 }
  button:hover {
 	background: #FFFACD;
 }
-	   
+
 .spec { background-color:#eaeaea;
 		font-family: Arial, sans-serif;
 		width: 250px; 
 		padding: 10px;	
 	  }
 .Box{ position: absolute; left: 710px; top: 270px;}
-.Box1{ position: absolute; left: 630px; top: 575px;}
-
+.Box1{ position: absolute; left: 630px; top: 560px;}
+.Box2{ position: absolute; left: 490px; top: 617px;}
 .li {
 	background: #b9cf6a;
 	background: rgba(255,255,255,.3);
@@ -225,6 +227,9 @@ nav, footer{ display: block; }
 .div2{position: absolute; left: 75px; top: 190px; width:530px; height:650px; padding:5px;}
 .date{position: absolute; left: 390px;}
 .position{ position: absolute; left: 640px; top: 940px;}
+.positionII{ position: absolute; left: 740px; top: 320px;}
+.article{ position: absolute; left: 490px; top: 350px; text-align: center; font-family: papyrus, fantasy;
+			  text-shadow: 3px 3px 3px #828282;color: #8B5A2B; font-size: 140%;}
 
 .p{font-size:1.20em; text-indent:3em;}
 .pos{ position: absolute; left: 75px; top: 485px; width:520px; border: white 1px solid; box-shadow:5px 5px 5px #828282;}
