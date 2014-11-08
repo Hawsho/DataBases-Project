@@ -83,7 +83,7 @@ ol li {
 
 label {
 	float: left;
-	font-size: 13px;
+	font-size: 15px;
 	width: 140px;
 }
 
@@ -111,12 +111,11 @@ button {
 	border-radius: 20px;
 	color: #ffffff;
 	display: block;
-	font: 18px Georgia, "Times New Roman", Times, serif;
+	font: 11px Georgia, "Times New Roman", Times, serif;
 	letter-spacing: 1px;
 	margin: auto;
-	padding: 7px 25px;
+	padding: 7px 20px;
 	text-shadow: 0 1px 1px #000000;
-	text-transform: uppercase;
 }
  button:hover {
 	background: #FFFACD;
