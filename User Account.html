@@ -38,15 +38,15 @@
 			</li>
 			<li>
 			<label for=Password>Password</label>
-			<input id=Password name=Password type=Password placeholder="No #$%^&*!@()[]{} Allowed" required>
+			<input id=Password name=Password type=text placeholder="No #$%^&*!@()[]{} Allowed" required>
 			</li>
 			<li>
-			<label for=Confirm Password>Confirm Password</label>
-			<input id=Confirm Password name=Confirm Password type=Confirm Password placeholder="re-write your Password" required>
+			<label for=Confirm >Confirm Password</label>
+			<input id=Confirm name=Confirm type=text placeholder="re-write your Password" required>
 			</li>
 			<li>
 			<label for=Age>Age</label>
-			<input id=Age name=Age type=Age placeholder="e.g. 23" required>
+			<input id=Age name=Age type=number min=1 max=120 placeholder="e.g. 23" required>
 			</li>
 		</ol>
 	</fieldset>
@@ -121,7 +121,9 @@
 	</li>
 	</ol>
 	</fieldset>
+	
 	<button type=submit>CREATE ACCOUNT</button>
+
 </form>
 
 <img class="Box" src="account.jpg" alt="Rating System">
