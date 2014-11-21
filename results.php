@@ -27,8 +27,7 @@
                 exit;
             }
         
-            $searchtype = addslashes($searchtype);
-            $searchterm = addslashes($searchterm);
+
             
             $db = oci_connect($username = cmk, $password = Kremie21, $connection_string = '//oracle.cise.ufl.edu/orcl');
             
