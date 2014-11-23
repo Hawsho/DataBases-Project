@@ -27,6 +27,6 @@ AGE	NUMBER(38,0)
 
 Account       **** this is currently empty.  USER_ID needs to start from the last one in the Users table.
 
-USER_ID	NUMBER
-USERNAME	VARCHAR2(50 BYTE)
-PASSWORD	VARCHAR2(50 BYTE)
+USER_ID	NUMBER<br>
+USERNAME	VARCHAR2(50 BYTE)<br>
+PASSWORD	VARCHAR2(50 BYTE)<br>
