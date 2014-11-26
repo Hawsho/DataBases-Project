@@ -1,6 +1,6 @@
 DataBases-Project
 =================
-<b>Database Tables<b>
+<b>Database Tables<b>  (look at base.php for the oracle login info)
 
 Books (32421 entries)             **I can add more, but the sql dump was messed up with a bunch of illegal characters, which made data insertion difficult
 
