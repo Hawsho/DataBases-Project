@@ -43,12 +43,12 @@ input, textarea { margin-bottom: 20px;
 	
 }
 #Standard2 {
+	position: absolute; left: 650px; top: 260px; width:330px; height:25px; padding:10px;	
 	background: #8B5A2B;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	padding: 20px;
-	width: 400px;
+	padding-left: 165px
 }
 
 fieldset {
@@ -131,6 +131,21 @@ button {
 .Box{ position: absolute; left: 710px; top: 270px;}
 .Box1{ position: absolute; left: 630px; top: 560px;}
 .Box2{ position: absolute; left: 490px; top: 617px;}
+.Box3{ position: absolute; left: 500px; top: 400px;}
+.Box4{ position: absolute; left: 700px; top: 580px;}
+.Box5{ position: absolute; left: 575px; top: 500px;}
+
+.star1{ position: absolute; left: 650px; top: 350px;}
+.star2{ position: absolute; left: 700px; top: 350px;}
+.star3{ position: absolute; left: 750px; top: 350px;}
+.star4{ position: absolute; left: 800px; top: 350px;}
+.star5{ position: absolute; left: 850px; top: 350px;}
+.star6{ position: absolute; left: 900px; top: 350px;}
+.star7{ position: absolute; left: 950px; top: 350px;}
+.star8{ position: absolute; left: 1000px; top: 350px;}
+.star9{ position: absolute; left: 1050px; top: 350px;}
+.star10{ position: absolute; left: 1100px; top: 350px;}
+
 .li {
 	background: #b9cf6a;
 	background: rgba(255,255,255,.3);
@@ -230,7 +245,9 @@ nav, footer{ display: block; }
 .positionII{ position: absolute; left: 740px; top: 320px;}
 .article{ position: absolute; left: 490px; top: 350px; text-align: center; font-family: papyrus, fantasy;
 			  text-shadow: 3px 3px 3px #828282;color: #8B5A2B; font-size: 140%;}
-
+.articleI{ position: absolute; left: 490px; top: 250px; text-align: center; font-family: papyrus, fantasy;
+			  text-shadow: 3px 3px 3px #828282;color: #8B5A2B; font-size: 140%;}
+			  
 .p{font-size:1.20em; text-indent:3em;}
 .pos{ position: absolute; left: 75px; top: 485px; width:520px; border: white 1px solid; box-shadow:5px 5px 5px #828282;}
 .pos2{ position: absolute; left: 650px; top: 485px; width:500px; border: white 1px solid; box-shadow:5px 5px 5px #828282;}
