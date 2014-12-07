@@ -21,7 +21,6 @@
       <li><a href="Add a Book.html">Add a Book</a></li>
 	  <li><a href="Find Book.html">Find Book</a></li>
       <li><a href="User Account.html">User Account</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </nav>
   <div id="content"> 
@@ -72,7 +71,7 @@
 
   </div>
   <footer>Copyright &copy; 2014 Issa Malke. All rights Reserved.
-  <div class="hypLinks"><a href="Home.html">Home</a>&nbsp;<a href="Sign-in.html">Sign in</a>&nbsp;<a href="Add a Book.html">Add a Book</a>&nbsp;<a href="Find Book.html">Find Book</a>&nbsp;<a href="User Account.html">User Account</a>&nbsp;<a href="contact.html">Contact Us</a></div>
+  <div class="hypLinks"><a href="Home.html">Home</a>&nbsp;<a href="Sign-in.html">Sign in</a>&nbsp;<a href="Add a Book.html">Add a Book</a>&nbsp;<a href="Find Book.html">Find Book</a>&nbsp;<a href="User Account.html">User Account</a>&nbsp;</div>
   </footer>
  </div>
 </body>
