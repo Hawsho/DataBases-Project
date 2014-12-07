@@ -134,6 +134,10 @@ button {
 .Box3{ position: absolute; left: 500px; top: 400px;}
 .Box4{ position: absolute; left: 700px; top: 580px;}
 .Box5{ position: absolute; left: 575px; top: 500px;}
+.Box6{ position: absolute; left: 170px; top: 470px;}
+.Box7{ position: absolute; left: 390px; top: 590px;}
+.Box8{ position: absolute; left: 630px; top: 440px;}
+.Box9{ position: absolute; left: 870px; top: 620px;}
 
 .star1{ position: absolute; left: 650px; top: 350px;}
 .star2{ position: absolute; left: 700px; top: 350px;}
@@ -246,6 +250,8 @@ nav, footer{ display: block; }
 .article{ position: absolute; left: 490px; top: 350px; text-align: center; font-family: papyrus, fantasy;
 			  text-shadow: 3px 3px 3px #828282;color: #8B5A2B; font-size: 140%;}
 .articleI{ position: absolute; left: 490px; top: 250px; text-align: center; font-family: papyrus, fantasy;
+			  text-shadow: 3px 3px 3px #828282;color: #8B5A2B; font-size: 140%;}
+.articleII{ position: absolute; left: 300px; top: 250px; text-align: center; font-family: papyrus, fantasy;
 			  text-shadow: 3px 3px 3px #828282;color: #8B5A2B; font-size: 140%;}
 			  
 .p{font-size:1.20em; text-indent:3em;}
