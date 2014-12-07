@@ -13,7 +13,6 @@
 <li><a href="Add a Book.html">Add a Book</a></li>
 <li><a href="search.html">Search for Books</a></li>
 <li><a href="User Account.html">User Account</a></li>
-<li><a href="contact.html">Contact Us</a></li>
 </ul>
 </nav>
    
