@@ -96,15 +96,7 @@
         }
         else{
         echo"connected yeahh!<br>";
-        //echo $ISBN;
-        //echo $Title;
-        //echo $Author;
-        //echo $Year;
-        //echo $Publisher;
-        //echo $Rate;
-        //echo $user_id;
-    
-        //$sql = "INSERT INTO table1 (test) VALUES(:ISBN)";
+     
         $sql = "INSERT INTO books (ISBN, Title, Author, Year, Publisher)
                VALUES(:ISBN, :Title, :Author,:Year, :Publisher ,NULL,NULL,NULL)";
         
