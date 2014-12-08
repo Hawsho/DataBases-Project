@@ -60,82 +60,39 @@
                         $Confirm = $_REQUEST['Confirm'];
                         $Age = $_REQUEST['Age'];
                         ?>
+                         <?php   
+                        $cookie_name = "Username";
+                        $cookie_value = $_REQUEST['username'];
+                        $time = time();
+                        setcookie($cookie_name,$cookie_value, time() + (86400 * 14)); //cookie lasts for 14 days
+
+                        ?>
+                        <?php
+                        if(!isset($_COOKIE[$cookie_name])) {
+                            echo "Cookie named '" . $cookie_name . "' is not set!";
+                        }else {
+                        echo "Cookie '" . $cookie_name . "' is set!<br>";
+                        echo "Value is: " . $_COOKIE[$cookie_name];
+                        }
+                        ?> 
 		</ol>
 	</fieldset>
 	<fieldset>
 		<legend>Location Details</legend>
-	<ol>
-	<li>
-		<fieldset>
-
-			<div class="li">
-			<label for=State>City</label>
-			<select>
-			<option value="Alabama">AL</option>
-			<option value="Alaska">AK</option>
-			<option value="Arizona">AZ</option>
-			<option value="Arkansas">AR</option>
-			<option value="California">CA</option>
-			<option value="Colorado">CO</option>
-			<option value="Connecticut">CT</option>
-			<option value="Delaware">DE</option>
-			<option value="Florida">FL</option>
-			<option value="Georgia">GA</option>
-			<option value="Hawaii">HI</option>
-			<option value="Idaho">ID</option>
-			<option value="Illinois">IL</option>
-			<option value="Indiana">IN</option>
-			<option value="Iowa">IA</option>
-			<option value="Kansas">KS</option>
-			<option value="Kentucky">KY</option>
-			<option value="Louisiana">LA</option>
-			<option value="Maine">ME</option>
-			<option value="Maryland">MD</option>
-			<option value="Massachusetts">MA</option>
-			<option value="Michigan">MI</option>
-			<option value="Minnesota">MN</option>
-			<option value="Mississippi">MS</option>
-			<option value="Missouri">MO</option>
-			<option value="Montana">MT</option>
-			<option value="Nebraska">NE</option>
-			<option value="Nevada">NV</option>
-			<option value="New Hampshire">NH</option>
-			<option value="New Jersey">NJ</option>
-			<option value="New Mexico">NM</option>
-			<option value="New York">NY</option>
-			<option value="North Carolina">NC</option>
-			<option value="North Dakota">ND</option>
-			<option value="Ohio">OH</option>
-			<option value="Oklahoma">OK</option>
-			<option value="Oregon">OR</option>
-			<option value="Pennsylvania">PA</option>
-			<option value="Rhode Island">RI</option>
-			<option value="South Carolina">SC</option>
-			<option value="South Dakota">SD</option>
-			<option value="Tennessee">TN</option>
-			<option value="Texas">TX</option>
-			<option value="Utah">UT</option>
-			<option value="Vermont">VT</option>
-			<option value="Virginia">VA</option>
-			<option value="Washington">WA</option>
-			<option value="West Virginia">WV</option>
-			<option value="Wisconsin">WI</option>
-			<option value="Wyoming">WY</option>
-			</select> 
-                        <input id=State  name=value>
-			</div>
-		</fieldset> 
-		<fieldset>
-			<div class="li">		
-			<label for=City>City</label>
+                <ol>
+                        <li>
+                        <label for=City>City</label>
 			<input id=City name=City type=text placeholder="e.g. Gainesville" required>
+                        </li>
+                        <li>
+			<label for=State>State</label>
+                        <input id=State name=State type=text placeholder="e.g. Florida" required>
+                        </li>
                         <?php
-                        $Location = $_REQUEST['City'];
+                        $Location = "$_REQUEST[City], $_REQUEST[State]";
+                        //$fieldThree = "$_REQUEST[fieldOne]$_REQUEST[fieldTwo]";
                         ?>
-			</div>
-		</fieldset>
-	</li>
-	</ol>
+                </ol>
 	</fieldset>
 	
 	<button type=submit>CREATE ACCOUNT</button>
@@ -151,8 +108,8 @@
     echo htmlentities($e['message']);
     }
     else{
-    //echo"connected yeahh!<br>";
-       
+    echo"connected yeahh!<br>";
+    
     $query = 'SELECT COUNT(*) AS NUMBER_OF_ROWS FROM users';
     $stmt = oci_parse($connection, $query);
     oci_define_by_name($stmt, 'NUMBER_OF_ROWS',$number_of_rows);
