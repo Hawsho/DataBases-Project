@@ -27,7 +27,7 @@
   <div id="content"> 
  
  <div class="article"><span class="font">Note: </span>We have four tables: Books, Ratings, Users, and Account.<br>
-     Please select one of the four and type your selection in the text field.
+     Please select one of the four from the drop down menu.
 	
  </div>
  <br><br><br><br>
@@ -35,14 +35,17 @@
 	<fieldset>
 		<legend>Tuples</legend>
 		<ol>
-			<li>
-			<label for=TableName>Table Name</label>
-			<input id=TableName name=TableName type=text required>
-			</li>
+			<select name="searchtype">
+			<option value="Books">Books</option>
+			<option value="Ratomgs">Ratings</option>
+			<option value="Users">Users</option>
+			<option value="Account">Account</option>
+
+			</select>
 
                         <?php
-                         $ISBN = $_REQUEST['TableName'];
-                        ?>
+                         $searchtype = $_REQUEST['searchtype'];
+                        ?> 
 		</ol>
 	</fieldset>
 	<fieldset>
@@ -64,11 +67,11 @@
         else{
         echo"connected yeahh!<br>";
         
-        $query = "SELECT COUNT(*) FROM :TableName";
+        $query = "SELECT COUNT(*) FROM $searchtype";
         
         $result = oci_parse($connection, $query);
         
-        oci_bind_by_name($result, ':TableName',$ISBN);
+        oci_bind_by_name($result, 'searchtype', $searchtype);
 
         
         oci_execute($result);
