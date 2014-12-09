@@ -25,41 +25,30 @@
   </nav>
   <div id="content"> 
  
- <div class="articleI"><span class="font">Note: </span> you may search for a book using the following: Title,
-	Author, Publication year,<br> and Publisher, but the most important
-	is the ISBN number,<br> that each book has a unique number.
+ <div class="articleI"><span class="font">Note: </span> you may search for a book using the following: ISBN, Title,
+	Author, Publication Year, or Publisher.
  </div>
  <br><br><br><br>
 	<form id=Standard>
 	<fieldset>
-		<legend>Search By</legend>
+		<legend>Search For Books</legend>
 		<ol>
-			<li>
-			<label for=ISBN>ISBN</label>
-			<input id=ISBN name=ISBN type=text >
-			</li>
-			<li>
-			<label for=Title>Title</label>
-			<input id=Title name=Title type=text >
-			</li>
-			<li>
-			<label for=Author>Author</label>
-			<input id=Author name=Author type=text >
-			</li>
-			<li>
-			<label for=Year>Publication Year</label>
-			<input id=Year name=Year type=text >
-			</li>
-			<li>
-			<label for=Publisher>Publisher</label>
-			<input id=Publisher name=Publisher type=text >
-			</li>
-		</ol>
-	</fieldset>
-	
-		<br>
-		<button type=submit formaction =Results.html value=Search </button> Search 
-	</fieldset>
+        <form action="results.php" method="post">
+            Choose Search Type:<br/>
+            <select name="searchtype">
+                <option value="Author">Author</option>
+                <option value="Title">Title</option>
+                <option value="ISBN">ISBN</option>
+                <option value="Year_Of_Publication">Year Published</option>
+                <option value="Publisher">Publisher</option>
+                
+            </select>
+            <br/>
+            Enter Search Term:<br/>
+            <input name="searchterm" type="text">
+            <br/>
+            <input type="submit" value="Search">
+        </form>
 	</div>
 	
 	</div>
